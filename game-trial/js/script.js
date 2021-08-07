@@ -2,21 +2,7 @@ let userScore = 0;
 let computerScore = 0;
 
 class Player {
-    constructor(fromUser) {
-        this.userChoice = fromUser;
-    }
-
-    setUserChoice() {
-        if (this.userChoice == 'rock') {
-            let userChoice = "rock";
-            this.checkPilihan(userChoice);
-        } else if (this.userChoice == 'paper') {
-            let userChoice = "paper";
-            this.checkPilihan(userChoice);
-        } else if (this.userChoice == 'scissor') {
-            let userChoice = "scissor";
-            this.checkPilihan(userChoice);
-        }
+    constructor() {
     }
 
     randomizeComChoice() {
@@ -70,47 +56,46 @@ class Player {
         if (userChoice == comChoice) {
             console.log("Draw");
             document.getElementById("result").classList.add("box-result");
-            document.getElementById("result").classList.remove("status");
+            document.getElementById("result").classList.remove("versus");
             document.getElementById("result").innerText = "DRAW";
         } else if (userChoice == "rock" && comChoice == "paper") {
             console.log("COM WIN");
             document.getElementById("result").classList.add("box-result");
-            document.getElementById("result").classList.remove("status");
+            document.getElementById("result").classList.remove("versus");
             result = document.getElementById("result").innerText = "COM WIN";
             this.updateScore(result);
         } else if (userChoice == "rock" && comChoice == "scissor") {
             console.log("Player 1 Win");
             document.getElementById("result").classList.add("box-result");
-            document.getElementById("result").classList.remove("status");
+            document.getElementById("result").classList.remove("versus");
             result = document.getElementById("result").innerText = "Player 1 Win";
             this.updateScore(result);
         } else if (userChoice == "paper" && comChoice == "rock") {
             console.log("Player 1 Win");
             document.getElementById("result").classList.add("box-result");
-            document.getElementById("result").classList.remove("status");
+            document.getElementById("result").classList.remove("versus");
             result = document.getElementById("result").innerText = "Player 1 Win";
             this.updateScore(result);
         } else if (userChoice == "paper" && comChoice == "scissor") {
             console.log("COM WIN");
             document.getElementById("result").classList.add("box-result");
-            document.getElementById("result").classList.remove("status");
+            document.getElementById("result").classList.remove("versus");
             result = document.getElementById("result").innerText = "COM WIN";
             this.updateScore(result);
         } else if (userChoice == "scissor" && comChoice == "rock") {
             console.log("COM WIN");
             document.getElementById("result").classList.add("box-result");
-            document.getElementById("result").classList.remove("status");
+            document.getElementById("result").classList.remove("versus");
             result = document.getElementById("result").innerText = "COM WIN";
             this.updateScore(result);
         } else if (userChoice == "scissor" && comChoice == "paper") {
             console.log("Player 1 Win");
             document.getElementById("result").classList.add("box-result");
-            document.getElementById("result").classList.remove("status");
+            document.getElementById("result").classList.remove("versus");
             result = document.getElementById("result").innerText = "Player 1 Win";
             this.updateScore(result);
         }
     }
 }
 
-// let play = new Player();
-// play.setUserChoice();
+let play = new Player();

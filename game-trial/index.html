@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style.css">
-    <title>ROCK PAPER SCISSORS</title>
+    <link rel="stylesheet" href="./css/style.css">
+    <title>ROCK PAPER SCISSORS GAME</title>
 </head>
 
 <body>
@@ -21,39 +21,33 @@
             <h1 id="computer">COMPUTER</h1><h1 id="comScore">0</h1>
 
             <div class="rock-grid1 box" id="rock-user">
-                <!-- <img class="image" src="./assets/rock.png" alt="back to prev" onclick="pickChoice('rock')"> -->
-                <img class="image" src="./assets/rock.png" alt="back to prev" onclick="play.setUserChoice();">        
+                <img class="image" src="./assets/rock.png" alt="back to prev" onclick="play.checkPilihan('rock');">        
             </div>
             <div class="rock-grid2" id="rock-com">
                 <img class="image not-allowed"src="./assets/rock.png" alt="back to prev">
             </div>
             <div class="paper-grid1 box" id="paper-user">
-                <img class="image"src="./assets/paper.png" alt="back to prev" onclick="play.setUserChoice();">
+                <img class="image"src="./assets/paper.png" alt="back to prev" onclick="play.checkPilihan('paper');">
             </div>
             <div class="paper-grid2" id="paper-com">
                 <img class="image not-allowed" src="./assets/paper.png" alt="back to prev">
             </div>
             <div class="scissor-grid1 box" id="scissor-user">
-                <img class="image" src="./assets/scissor.png" alt="back to prev" onclick="play.setUserChoice();">
+                <img class="image" src="./assets/scissor.png" alt="back to prev" onclick="play.checkPilihan('scissor');">
             </div>
             <div class="scissor-grid2" id="scissor-com" >
                 <img class="image not-allowed" src="./assets/scissor.png" alt="back to prev">
             </div>
             
-            <div id="result" class="status">
-                <h1>VS</h1>
+            <div id="result" class="versus">
+                <h1>VS</h1> 
             </div>
             
             <div class="refresh" ><a href="#">
-                <img class="image-refresh"src="./assets/refresh.png" alt="back to prev" onClick="window.location.reload();">
+                <a href="./index.html"><img class="image-refresh"src="./assets/refresh.png" alt="back to prev"></a>
             </div>
         </div>
     </div>    
-<script src="./script2.js"></script>
-<script>
-    let play = new Player();
-    console.log(play);
-    // play.setUserChoice();
-</script>
+<script src="./js/script.js"></script>
 </body>
 </html>

@@ -50,7 +50,7 @@ body {
     "player . computer"
     "playerScore . comScore"
     "rock1 . rock2"
-    "paper1 status paper2"
+    "paper1 versus paper2"
     "scissor1 . scissor2"
     ". refresh .";
   gap: 10px;
@@ -83,7 +83,7 @@ body {
   color: #fff;
   width: 11vw;
   height: 9vw;
-  grid-area: status;
+  grid-area: versus;
   font-size: 3.3vw;
   background-color: #4c9654;
   padding: 10px 30px 10px 30px;
@@ -97,9 +97,9 @@ body {
   transform: rotate(-20deg);
 }
 
-.status {
+.versus {
   color: #bd0000;
-  grid-area: status;
+  grid-area: versus;
   font-size: 3.3vw;
 }
 
