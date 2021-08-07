@@ -21,19 +21,20 @@
             <h1 id="computer">COMPUTER</h1><h1 id="comScore">0</h1>
 
             <div class="rock-grid1 box" id="rock-user">
-                <img class="image" src="./assets/rock.png" alt="back to prev" onclick="pickChoice('rock')">
+                <!-- <img class="image" src="./assets/rock.png" alt="back to prev" onclick="pickChoice('rock')"> -->
+                <img class="image" src="./assets/rock.png" alt="back to prev" onclick="play.setUserChoice();">        
             </div>
             <div class="rock-grid2" id="rock-com">
                 <img class="image not-allowed"src="./assets/rock.png" alt="back to prev">
             </div>
             <div class="paper-grid1 box" id="paper-user">
-                <img class="image"src="./assets/paper.png" alt="back to prev" onclick="pickChoice('paper')">
+                <img class="image"src="./assets/paper.png" alt="back to prev" onclick="play.setUserChoice();">
             </div>
             <div class="paper-grid2" id="paper-com">
                 <img class="image not-allowed" src="./assets/paper.png" alt="back to prev">
             </div>
             <div class="scissor-grid1 box" id="scissor-user">
-                <img class="image" src="./assets/scissor.png" alt="back to prev" onclick="pickChoice('scissor')">
+                <img class="image" src="./assets/scissor.png" alt="back to prev" onclick="play.setUserChoice();">
             </div>
             <div class="scissor-grid2" id="scissor-com" >
                 <img class="image not-allowed" src="./assets/scissor.png" alt="back to prev">
@@ -48,6 +49,11 @@
             </div>
         </div>
     </div>    
-<script src="./script.js"></script>
+<script src="./script2.js"></script>
+<script>
+    let play = new Player();
+    console.log(play);
+    // play.setUserChoice();
+</script>
 </body>
 </html>

@@ -14,7 +14,7 @@ function pickChoice(fromUser) {
     }
 }
 
-function acakPilihan() {
+function randomizeComChoice() {
     // randomize 1-3
     let computer = Math.floor(Math.random() * 3);
 
@@ -56,7 +56,7 @@ function checkPilihan(userChoice) {
     reset();
 
     document.getElementById(`${userChoice}-user`).classList.add("box-selected");
-    let comChoice = acakPilihan();
+    let comChoice = randomizeComChoice();
     document.getElementById(`${comChoice}-com`).classList.add("box-selected");
 
     let result;
